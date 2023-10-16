@@ -1,0 +1,147 @@
+.botContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.botHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.botBody {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 18px;
+  position: relative;
+}
+
+.botBodyLogo {
+  position: absolute;
+  /* display: flex;
+  justify-content: center; */
+  color: white;
+  top: 25px;
+  right: 20px;
+  border: 0.5px solid white;
+  padding: 1px;
+  border-radius: 4px;
+  text-shadow: none;
+}
+
+.botBodyHalf {
+  width: 100%;
+  background: rgb(0, 0, 48);
+  display: flex;
+  justify-content: center;
+}
+
+.botBodyHalfStars.red {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 65% 15%, white 1px, rgb(255, 0, 179) 3%, rgb(189, 2, 152) 60%, rgb(255, 0, 179) 100%);
+  margin: 2px 5px;
+}
+
+.botBodyHalfStars.blue {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 65% 15%, white 1px, aqua 3%, rgb(14, 14, 227) 60%, aqua 100%);
+  margin: 2px 5px;
+}
+
+@keyframes quiet {
+  25%{
+    transform: scaleY(.6);
+  }
+  50%{
+    transform: scaleY(.4);
+  }
+  75%{
+    transform: scaleY(.8);
+  }
+}
+
+@keyframes normal {
+  25%{
+    transform: scaleY(1);
+  }
+  50%{
+    transform: scaleY(.4);
+  }
+  75%{
+    transform: scaleY(.6);
+  }
+}
+@keyframes loud {
+  25%{
+    transform: scaleY(1);
+  }
+  50%{
+    transform: scaleY(.4);
+  }
+  75%{
+    transform: scaleY(1);
+  }
+}
+
+.boxContainer{
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  --boxSize: 4px;
+  --gutter: 3px;
+  width: calc((var(--boxSize) + var(--gutter)) * 5);
+  background: rgb(0, 0, 48);
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.box{
+  transform: scaleY(.4);
+  height: 100%;
+  width: var(--boxSize);
+  background: #12E2DC;
+  border: 1px solid black;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  border-radius: 8px;
+}
+
+.box1{
+  animation-name: quiet;
+}
+
+.box2{
+  animation-name: normal;
+}
+
+.box3{
+  animation-name: quiet;
+}
+
+.box4{
+  animation-name: loud;
+}
+
+.box5{
+  animation-name: quiet;
+}

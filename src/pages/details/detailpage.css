@@ -1,0 +1,16 @@
+.detailHeader {
+  display: flex;
+  flex-direction: column;
+  color: #12E2DC;
+  align-items: center;
+}
+
+.detailHeaderImg {
+  width: 60px;
+  height: 60px;
+}
+
+.detailHeaderTitle {
+  font-size: 20px;
+  font-family: monospace;
+}

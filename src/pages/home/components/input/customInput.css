@@ -1,0 +1,57 @@
+.my-container-collapse {
+  display: flex;
+  align-items: center;
+  transition: height 3s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+.my-container-collapse.show {
+  height: 100vh;
+}
+
+.input {
+  border-radius: 15px;
+  min-width: 250px;
+  padding: 4px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.submitBtn {
+  color: #12E2DC;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: monospace;
+  padding: 0 1vw;
+  text-shadow: 2px 2px rgb(0 0 0 / 0.4);
+  border: 1px solid #12e2db9b;
+  border-radius: 15px;
+  margin-left: 8px;
+  min-width: 80px;
+  text-align: center;
+  background: none;
+  padding: 4px;
+
+  &:hover {
+    cursor: pointer;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+      border: 1px solid #12E2DC;
+  }
+}
+
+.validation {
+  position: absolute;
+  color: rgb(253, 15, 166);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
